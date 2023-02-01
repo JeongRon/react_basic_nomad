@@ -100,3 +100,28 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
   - React는 바뀐 부분만 UI 업데이트
   - JS는 노드 정보가 바뀔때마다 노드트리를 모두 업데이트
 - 현재 코드는 렌더링 함수를 만들어 업데이트 시 리렌더링 되게 구현
+
+## 3.1 setState part One
+
+## 3.2 setState part Two
+
+- 리렌더링 하는 방법 - setState
+  - const [counter, setCounter] = React.useState(0);
+
+```js
+ const root = document.getElementById("root");
+    function App() {
+      const [counter, setCounter] = React.useState(0);
+      const onClick = () => {
+        setCounter(counter + 1);
+      };
+      return (
+        <div>
+          <h3>Total clicks: {counter}</h3>
+          <button onClick={onClick}>Click me</button>
+        </div>
+      );
+    }
+    ReactDOM.render(<App />, root);
+  </script>
+```
