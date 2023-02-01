@@ -93,3 +93,10 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
   - fucniton sytle
     - return O
     - function Title() {... return();}
+
+## 3.0 Understanding State
+
+- 리렌더링
+  - React는 바뀐 부분만 UI 업데이트
+  - JS는 노드 정보가 바뀔때마다 노드트리를 모두 업데이트
+- 현재 코드는 렌더링 함수를 만들어 업데이트 시 리렌더링 되게 구현
