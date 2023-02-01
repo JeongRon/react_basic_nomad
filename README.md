@@ -64,3 +64,14 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
   <br><br>
 - JS가 element를 생성하고 React JS가 그것을 HTML로 번역하는 것
 - React JS는 업데이트 해야 하는 HTML을 업데이트 할 수 있음
+
+## 2.3 Events in React
+
+- h3, btn 두 가지를 render 하고 싶은 경우
+
+  - const container = React.createElement("div", null, [span, btn]);
+  - 배열을 만들어서 넣어준다.
+
+- property에 eventListener 넣는 것도 가능.
+  - 클릭 {onClick: () => console.log("I'm clicked")}
+  - 마우스엔터 {onMouseEnter: () => console.log("mouse enter")}
