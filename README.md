@@ -83,3 +83,13 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
   - JSX를 사용하려면, babel 필요
 
 - 실습 : JSX형식으로 react 컴포넌트 만들기
+
+## 2.6 JSX part Two
+
+- 컴포넌트 만들기
+  - Arrow function style
+    - return X
+    - const Button = () => (...)
+  - fucniton sytle
+    - return O
+    - function Title() {... return();}
