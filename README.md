@@ -75,3 +75,11 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
 - property에 eventListener 넣는 것도 가능.
   - 클릭 {onClick: () => console.log("I'm clicked")}
   - 마우스엔터 {onMouseEnter: () => console.log("mouse enter")}
+
+## 2.5 JSX
+
+- JSX : js를 확장한 문법
+
+  - JSX를 사용하려면, babel 필요
+
+- 실습 : JSX형식으로 react 컴포넌트 만들기
