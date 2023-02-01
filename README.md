@@ -132,3 +132,10 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
   1. 직접 할당 : setCounter(state + 1);
   2. 함수를 할당 : setCounter((current) => current + 1);
   - 2번 함수를 할당하는 것이 더욱 안정성이 높다 함
+
+## 3.5 Inputs and State
+
+- JSX는 class / for 과 같이 JavaScript에서 선점된 문법 용어를 사용 못한다.
+  - class는 className으로 for은 htmlFor로 바꿔쓴다
+- controlled component
+  - Input 태그 나오면 value, onChange 속성을 붙여서 상태를 관리
