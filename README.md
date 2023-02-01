@@ -125,3 +125,10 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
     ReactDOM.render(<App />, root);
   </script>
 ```
+
+## 3.4 State Functions
+
+- setState 로 현재 값을 바꾸기
+  1. 직접 할당 : setCounter(state + 1);
+  2. 함수를 할당 : setCounter((current) => current + 1);
+  - 2번 함수를 할당하는 것이 더욱 안정성이 높다 함
