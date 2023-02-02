@@ -139,3 +139,10 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
   - class는 className으로 for은 htmlFor로 바꿔쓴다
 - controlled component
   - Input 태그 나오면 value, onChange 속성을 붙여서 상태를 관리
+
+## 3.6 State Practice part One
+
+- 분 입력 시, 시간이 자동으로 업데이트 되게끔 설정하기
+  - hours input 에도 value 속성 안에 상태 지정
+- reset 버튼 만들기
+  - button 태그의 onClick 속성 지정
