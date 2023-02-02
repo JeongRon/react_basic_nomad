@@ -162,3 +162,25 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
 - 컴포넌트 나누기
 - 컴포넌트를 select 할 수 있게 구현 하기
   - index state 사용
+
+## 4.0 Props
+
+- Props 사용하기
+  - 비슷한 버튼을 만들기
+  - text, font-size 만 props를 활용해서 넘겨주기
+
+```js
+function Btn({ banana, big }) {
+  return (
+    {banana}
+    {big}
+  );
+}
+
+function Btn(props) {
+  return (
+    {props.banana}
+    {props.big}
+  );
+}
+```
