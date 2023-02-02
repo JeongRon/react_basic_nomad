@@ -184,3 +184,17 @@ function Btn(props) {
   );
 }
 ```
+
+## 4.1 Memo
+
+1. props에 function도 보낼 수 있음
+
+- 이것은 JSX로 html 태그 자체에 이벤트 리스너를 넣는것과는 전혀 다른 것임.
+- 그저 이벤트를 실행시키는 함수가 프로퍼티로 들어간 것임.
+
+2. 불필요한 re-render는 React.memo()로 관리할 수 있음
+
+- 부모 컴포넌트의 state를 변경하면 당연히 그 자식 컴포넌트들도 Re-render가 일어남.
+- 불필요한 렌더링이 발생할 수도 있는데, 이 경우에는 React.memo()로 prop의 변경이 일어난 부분만 렌더링 시킬 수 있음.
+- React.memo()
+  - 컴포넌트가 React.memo()로 wrapping 될 때, React는 컴포넌트를 렌더링하고 결과를 메모이징(Memoizing)한다. 그리고 다음 렌더링이 일어날 때 props가 같다면, React는 메모이징(Memoizing)된 내용을 재사용한다.
