@@ -156,3 +156,9 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
   - 삼항 연산자 사용
   - value={flipped ? amount : amount / 60}
   - value={flipped ? amount \* 60 : amount}
+
+## 3.9 Final Practice and Recap
+
+- 컴포넌트 나누기
+- 컴포넌트를 select 할 수 있게 구현 하기
+  - index state 사용
