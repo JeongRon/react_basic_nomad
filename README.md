@@ -142,7 +142,17 @@ Nomad - ReactJS로 영화 웹 서비스 만들기
 
 ## 3.6 State Practice part One
 
-- 분 입력 시, 시간이 자동으로 업데이트 되게끔 설정하기
+- 분 입력시, 시간이 자동으로 업데이트 되게끔 설정하기
   - hours input 에도 value 속성 안에 상태 지정
 - reset 버튼 만들기
   - button 태그의 onClick 속성 지정
+
+## 3.7 State Practice part Two
+
+- flip 구현하기
+  - 분 입력일때, 시간은 disabled=true / 시간 입력일때, 분은 disabled=true
+  - const [flipped, setFlipped] = React.useState(false);
+- 시간 -> 분 컨버터 만들기
+  - 삼항 연산자 사용
+  - value={flipped ? amount : amount / 60}
+  - value={flipped ? amount \* 60 : amount}
