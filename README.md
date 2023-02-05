@@ -252,3 +252,18 @@ export default Button;
 - useState 사용해서 버튼 클릭 코드 작성
   - state가 바뀔 때 마다 해당 App 컴포넌트는 모든 코드를 다시 실행 함.
   - 특정 코드들이 첫번째 component render에서만 실행되게 하려면? => useEffect !!
+
+## 6.1 useEffect
+
+- useEffect
+  - 두 개의 argument를 가지는 함수
+  - 첫 번째 argument는 우리가 딱 한번만 실행하고 싶은 함수
+  - 두 번째 argument는 [] 배열을 넣어줌
+
+```js
+import { useState, useEffect } from "react";
+
+useEffect(() => {
+  console.log("CALL THE API...");
+}, []);
+```
