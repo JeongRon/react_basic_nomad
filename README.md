@@ -219,3 +219,30 @@ function Btn(props) {
 
   3. 파일 정리
      - src 폴더 / App.js, index.js 외 모두 삭제
+
+## 5.1 Tour of CRA
+
+1. PropTypes 모듈 설치하고 활용
+   - npm i prop-types
+2. Button 컴포넌트 만들기
+   - js 파일 생성
+   - css 파일 생성
+3. css 코드를 자바스크립트 객체로 변환해서 사용하기
+   - import styles from "./Button.module.css";
+   - className={styles.btn}
+   - html 코드 보면, 자동으로 클래스네임 설정됨
+
+```js
+import PropTypes from "prop-types";
+import styles from "./Button.module.css";
+
+function Button({ text }) {
+  return <button className={styles.btn}>{text}</button>;
+}
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
+export default Button;
+```
