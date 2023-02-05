@@ -204,3 +204,18 @@ function Btn(props) {
 1. 리액트는 파라미터를 잘 못 넘겨도 확인할 수 없는 문제점이 존재한다.
 2. 이런 문제를 줄이기 위해서 PropTypes라는 모듈의 도움을 받을 수 있다.
 3. type과 다르게 입력 되엇을 경우 warning을 뜨게 할수 있고, parameter 에 값을 넣지 않는 경우 경고 메시지를 띄울수 있다.
+
+## 5.0 Introduction
+
+- React 프로젝트 초기화 (Create React App)
+
+  1. 빌드 구성 없이 React 앱 만들기
+
+     - npx create-react-app my-app
+
+  2. 리액트 실행
+
+     - npm start
+
+  3. 파일 정리
+     - src 폴더 / App.js, index.js 외 모두 삭제
