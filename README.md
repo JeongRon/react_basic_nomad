@@ -267,3 +267,31 @@ useEffect(() => {
   console.log("CALL THE API...");
 }, []);
 ```
+
+## 6.2 Deps
+
+- useEffect 사용
+  - 컴포넌트가 처음 rendering 되었을 때만 실행 할 코드
+  - 어느 특정 state에 변화가 있을 때만 실행할 코드
+
+```js
+const [keyword, setKeyword] = useState("");
+const onChange = (event) => setKeyword(event.target.value);
+
+useEffect(() => {
+  console.log("i run only once.");
+}, []);
+
+useEffect(() => {
+  console.log("i run when 'keyword' changes");
+}, [keyword]);
+
+return (
+  <input
+    value={keyword}
+    onChange={onChange}
+    type="text"
+    placeholder="Search here..."
+  />
+);
+```
