@@ -246,3 +246,9 @@ Button.propTypes = {
 
 export default Button;
 ```
+
+## 6.0 Introduction
+
+- useState 사용해서 버튼 클릭 코드 작성
+  - state가 바뀔 때 마다 해당 App 컴포넌트는 모든 코드를 다시 실행 함.
+  - 특정 코드들이 첫번째 component render에서만 실행되게 하려면? => useEffect !!
