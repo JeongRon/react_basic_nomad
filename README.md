@@ -295,3 +295,48 @@ return (
   />
 );
 ```
+
+## 6.4 Cleanup
+
+- 정리(clean-up)를 이용하는 Effects
+- 컴포넌트 재생성 시, 컴포넌트 안에 useEffect도 다시 실행 된다.
+- 컴포넌트가 destroy될 때도 코드를 실행 할 수 있다.
+  - return 함수 만들기
+
+```js
+import { useState, useEffect } from "react";
+
+/*
+function Hello() {
+  function byeFn() {
+    console.log("bye :(");
+  }
+  function hiFn() {
+    console.log("hi :)");
+    return byeFn;
+  }
+  useEffect(hiFn, []);
+  return <h1>Hello</h1>;
+}
+*/
+function Hello() {
+  useEffect(() => {
+    console.log("hi :)");
+    return () => console.log("bye :(");
+  }, []);
+  return <h1>Hello</h1>;
+}
+
+function App() {
+  const [showing, setShowing] = useState(false);
+  const onClick = () => setShowing((prev) => !prev);
+  return (
+    <div>
+      {showing ? <Hello /> : null}
+      <button onClick={onClick}>{showing ? "Hide" : "Show"}</button>
+    </div>
+  );
+}
+
+export default App;
+```
