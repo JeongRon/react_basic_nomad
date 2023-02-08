@@ -356,3 +356,18 @@ export default App;
   - 첫 번째 to-do를 입력할 때 비어있는 currentArray 받아옴
   - 이건 새로운 toDos가 input을 통해 작성한 toDo와
   - 아무것도 들어있지 않은 빈 배열의 element가 더해지게 된다는 것
+
+## 7.1 To Do List part Two
+
+- map() 함수
+  - 배열을 가지고 있을 때 각각의 element들을 바꿀 수 있게 해줌
+  - 첫 번째 argument : 각 element에 있는 값
+  - 두 번째 argument : index 숫자
+- 리액트 / li 태그에 key 값 넣어줘야 함
+
+```js
+// map 함수 활용 && react의 li 태그에는 key 값이 필요
+{
+  toDos.map((item, index) => <li key={index}>{item}</li>);
+}
+```
