@@ -371,3 +371,7 @@ export default App;
   toDos.map((item, index) => <li key={index}>{item}</li>);
 }
 ```
+
+## 7.2 Coin Tracker
+
+- 비트코인 api를 통해 데이터 가져온 후, 데이터를 화면에 띄우기
