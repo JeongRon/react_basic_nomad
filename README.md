@@ -375,3 +375,8 @@ export default App;
 ## 7.2 Coin Tracker
 
 - 비트코인 api를 통해 데이터 가져온 후, 데이터를 화면에 띄우기
+
+## 7.3 Movie App part One
+
+- movie api를 통해 데이터 가져온 후, 데이터를 화면에 띄우기
+  - async / await 사용
