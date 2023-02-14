@@ -390,3 +390,15 @@ export default App;
       - Home 라우트 : 모든 영화를 보여 줌
       - Detail 라우트 : 영화 하나만 보여 줌
   - 라우트에서 쓰이는 컴포넌트들 폴더 만들기 (`<Movie/>` 와 같은 컴포넌트들)
+
+## 7.5 React Router
+
+- react-router-dom 사용
+  - 설치 : npm i react-router-dom@5.3.0
+  - 컴포넌트들의 모음집
+    - (1) Router : Router를 먼저 렌더링
+    - (2) Switch : 한 번에 하나의 Route만 렌더링 하기 위한 녀석
+    - (3) Route : path를 지정하고, path와 같은 url일 시, Route 안의 컴포넌트 실행
+    - (4) Link : `<a href="">`/ a태그 페이지 전환 대체 컴포넌트
+      - a 태그 : url이동 리렌더링
+      - Link 컴포넌트 : 리렌더링 X
