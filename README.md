@@ -380,3 +380,13 @@ export default App;
 
 - movie api를 통해 데이터 가져온 후, 데이터를 화면에 띄우기
   - async / await 사용
+
+## 7.4 Movie App part Two
+
+- 폴더 분류 하기
+  - 라우트(페이지) 폴더 만들기 (페이지 별 코드 나누는 역할)
+    - (1) npm install react-router-dom
+    - (2) routes 폴더 및 파일 생성
+      - Home 라우트 : 모든 영화를 보여 줌
+      - Detail 라우트 : 영화 하나만 보여 줌
+  - 라우트에서 쓰이는 컴포넌트들 폴더 만들기 (`<Movie/>` 와 같은 컴포넌트들)
