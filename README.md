@@ -427,3 +427,26 @@ export default App;
   ```
 
 - 코드 챌린지 / Detail 페이지 꾸미기
+
+## 7.7 Publishing
+
+- gh-pages
+  - 결과물을 github pages에 업로드 할 수 있게 해주는 패키지
+
+1. (설치) npm i gh-pages
+2. (추가) package.json 에 코드 추가
+
+   - (1) 홈페이지 url 만들기
+     - `"homepage": "https://JeongRon.github.io/react_basic_nomad"`
+       - 깃허브 아이디 (+) github.io/ (+) 레포지터리 이름
+   - (2) "scipts" 안에 "deploy" 추가
+     - `"deploy" : "gh-pages -d build"`
+       - gh-pages 실행시키고, build 디렉토리 가져감
+     - `"predeploy" : "npm run build"`
+       - deploy 전에 자동으로 build 시키도록 넣은 코드
+
+3. (실행) `npm run deploy`
+
+   - "predeploy" 실행 -> "deploy" 실행
+
+4. (확인) homepage url 업데이트 확인
