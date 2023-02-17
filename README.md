@@ -402,3 +402,28 @@ export default App;
     - (4) Link : `<a href="">`/ a태그 페이지 전환 대체 컴포넌트
       - a 태그 : url이동 리렌더링
       - Link 컴포넌트 : 리렌더링 X
+
+## 7.6 Parameters
+
+- useParams()
+
+  - 리엑트에서 라우터 사용시, 파라미터 정보를 가져와 활용 할 때 쓰임
+
+  ```js
+  // path url 에서 :id 값을 가져오기
+
+  // App.js
+  <Route path="/movie/:id">
+    <Detail />
+  </Route>;
+
+  // Detail.js ->
+  import { useParams } from "react-router-dom";
+
+  function Detail() {
+    const { id } = useParams();
+    return <p>useParams로 가져온 파라미터 정보 = {id}</p>;
+  }
+  ```
+
+- 코드 챌린지 / Detail 페이지 꾸미기
